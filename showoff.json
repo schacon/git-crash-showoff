@@ -1,0 +1,7 @@
+{ "name": "My Preso", 
+  "sections": [ 
+    {"section":"title"},
+    {"section":"about_me"},
+    {"section":"git"},
+    {"section":"final"}
+  ]}
