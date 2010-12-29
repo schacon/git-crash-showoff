@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>My Preso</title>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/extra.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+    setupPreso(false, './');
+  });
+  </script>
+</head>
+
+<body>
+
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">&larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">z</td><td>toggle help (this)</td></tr>
+  </table>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="title/title">
+<h1>Git Crash Course</h1>
+
+<h2>A Quick Tour Through Git</h2>
+
+<h3>by Scott Chacon</h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="about_me/about_me/1">
+<h1>Me</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="about_me/about_me/2">
+<h1>Scott Anthony Chacon</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="about_me/about_me/3">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/about_me/octocat.png" width="560" height="475" alt="Octocat"/></p>
+
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/about_me/github.png" width="241" height="107" alt="GitHub"/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="about_me/about_me/4">
+<h2>http://git-scm.com</h2>
+
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/about_me/gitscm.png" width="812" height="538" alt="git-scm.com"/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="about_me/about_me/5">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/about_me/gitref.png" width="863" height="467" alt="GitRef"/></p>
+
+<h2>http://gitref.org</h2>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="about_me/about_me/6">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/about_me/progit.png" width="407" height="515" alt="Pro Git"/></p>
+
+<h2>http://progit.org</h2>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="about_me/about_me/7">
+<h1>@chacon</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="about_me/about_me/8">
+<h1>schacon@gmail.com</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="about_me/about_me/9">
+<h1>&lt;/me&gt;</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/1">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.013.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/2">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.014.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/3">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.015.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/4">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.016.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/5">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.017.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/6">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.018.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/7">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.019.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/8">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.020.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/9">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.021.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/10">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.022.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/11">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.024.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/12">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.025.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/13">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.026.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/14">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.027.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/15">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.028.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/16">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.029.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/17">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.030.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/18">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.031.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/19">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.032.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/20">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.033.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/21">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.034.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/22">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.035.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/23">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.036.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/24">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.037.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/25">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.038.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/26">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.039.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/27">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.040.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/28">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.041.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/29">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.042.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/30">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.043.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/31">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.044.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/32">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.045.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/33">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.046.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/34">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.047.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/35">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.048.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/36">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.049.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/37">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.050.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/38">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.051.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/39">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.052.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/40">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.053.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/41">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.054.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/42">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.055.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/43">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.056.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/44">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.057.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/45">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.058.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/46">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.059.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/47">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.060.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/48">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.061.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/49">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.062.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/50">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.063.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/51">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.064.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/52">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.065.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/53">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.066.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/54">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.067.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/55">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.068.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="git/0_intro/56">
+<p><img src="file:///Users/schacon/projects/presentations/git_crash/git/stuff/stuff.069.jpg" width="1024" height="768" alt=""/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content !SLIDE" ref="git/git/1">
+<h1>Getting Git</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/2">
+<h1>how do you get a git repository?</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content powercmd" ref="git/git/3">
+<h1>git clone</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/4">
+<h1>but even simpler...</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/5">
+<h1>who has used RCS?</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content powercmd" ref="git/git/6">
+<h1>git init</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/7">
+<h1>Snapshotting</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/8">
+<h1>creating your snapshots</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/9">
+<h1>1. staging your content</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content powercmd" ref="git/git/10">
+<h1>git add</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/11">
+<h1>2. seeing what is staged</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content powercmd" ref="git/git/12">
+<h1>git status</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content powercmd" ref="git/git/13">
+<h1>git diff</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/14">
+<h1>3. recording the staged content</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content powercmd" ref="git/git/15">
+<h1>git commit</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/16">
+<h1>even simpler way</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content powercmd" ref="git/git/17">
+<h1>git commit -a</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/18">
+<h1>Branching</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/19">
+<h1>contexts to isolate your work in</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/20">
+<h1>1. create a new context</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content powercmd" ref="git/git/21">
+<h1>git branch</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/22">
+<h1>2. switch to another context</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content powercmd" ref="git/git/23">
+<h1>git checkout</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/24">
+<h1>1,2. create and switch at the same time</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content powercmd" ref="git/git/25">
+<h1>git checkout -b</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/26">
+<h1>Merging</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/27">
+<h1>combine two or more contexts</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content powercmd" ref="git/git/28">
+<h1>git merge</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/29">
+<h1>Sharing</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/30">
+<h1>telling Git about another repository</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content powercmd" ref="git/git/31">
+<h1>git remote</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/32">
+<h1>updating a branch in another repository with one of yours</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content powercmd" ref="git/git/33">
+<h1>git push</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/34">
+<h1>getting all the branches in another repository</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content powercmd" ref="git/git/35">
+<h1>git fetch</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/36">
+<h1>Overview</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="git/git/37">
+<h1>12 Commands</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental code small" ref="git/git/38">
+<ul>
+<li>git init</li>
+<li>git clone</li>
+<li>git add</li>
+<li>git status</li>
+<li>git diff</li>
+<li>git commit</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental code small" ref="git/git/39">
+<ul>
+<li>git branch</li>
+<li>git checkout</li>
+<li>git merge</li>
+<li>git remote</li>
+<li>git push</li>
+<li>git fetch</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="final/final/1">
+<h1>that's it!</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental small" ref="final/final/2">
+<h1>Resources</h1>
+
+<ul>
+<li>git-scm.com</li>
+<li>gitref.org</li>
+<li>progit.org</li>
+<li>#git / #github on IRC</li>
+<li>schacon@gmail.com</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
