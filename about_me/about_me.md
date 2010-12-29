@@ -14,19 +14,15 @@
 
 !SLIDE center
 
-## github.com/**schacon** ##
-
-![GitHub Stuff](github-stuff.png)
-
-!SLIDE center
-
 ## http://git-scm.com ##
 
 ![git-scm.com](gitscm.png)
 
 !SLIDE center
 
-![peepcode](peepcode.png)
+![GitRef](gitref.png)
+
+## http://gitref.org ##
 
 !SLIDE center
 
